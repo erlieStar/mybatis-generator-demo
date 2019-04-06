@@ -78,13 +78,11 @@
 
         <!--&lt;!&ndash;tableName表名，domainObjectName生成Java类的类名，enableCountByExample是否可以通过对象查数量,其他类似&ndash;&gt;-->
         <!--用这个配置-->
-        <!--<table tableName="student" domainObjectName="Student" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
-            <!--<columnOverride column="create_time" javaType="java.time.LocalDateTime"/>-->
-        <!--</table>-->
+        <table tableName="student" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <columnOverride column="create_time" javaType="java.time.LocalDateTime"/>
+        </table>
         <!--tableName表名，domainObjectName生成Java类的类名，enableCountByExample是否可以通过对象查数量,其他类似-->
         <!--多个表时写多个table标签即可-->
-        <table tableName="student">
-        </table>
 
         <!-- geelynote mybatis插件的搭建 -->
     </context>
